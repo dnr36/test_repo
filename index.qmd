@@ -1,0 +1,35 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Assignment XX"
+author: "Name - NetID"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+
+```
+
+# Exercise 01
+
+```{r}
+storms %>%
+   filter(year >= 2000) %>%
+    ggplot(aes(long, lat, color = paste(year, name))) +
+    geom_path(show.legend = FALSE) +
+    facet_wrap(~year)
+
+```
+
+# Exercise 02
+
+```{r}
+
+
+```
+
+
